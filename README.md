@@ -13,3 +13,15 @@ https://shafeequeom.github.io/vue-world/
 ### Objective
 
 Your challenge is to integrate with the [REST Countries API](https://restcountries.com/#api-endpoints-v2) to pull country data and display it like in the designs. Use JavaScript and Vue.
+
+## Technologies Used
+- Vue.js
+- restcountries api
+- JavaScript
+- HTML5
+- CSS3
+- Webpack
+- npm
+
+## Screenshot
+![screenshot](screenshot.png)
