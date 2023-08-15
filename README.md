@@ -1,15 +1,14 @@
-Live Demo
+### Live Demo
 
-
-## Run Project Locally
+### Run Project Locally
 ```
 1. git clone 
-2. cd [project-directory]
+2. cd thriving-boards
 3. npm i
 4. npm run serve
 ```
 
-### Technologies Used
+### Technologies
 - Vue.js
 - restcountries api
 - JavaScript
