@@ -1,0 +1,32 @@
+﻿[
+    {
+        "name": "江戶川柯南",
+        "alias": "charleswang",
+        "project_zh": "游泳 2000 米",
+        "project": "Swimming",
+        "location": "台北",
+        "date": "8/15/2023",
+        "activityId": "card1",
+        "gif": "https://charleswang.us/thriving/images/swimming.gif"
+    },
+    {
+        "name": "工藤新一",
+        "alias": "charleswang",
+        "project_zh": "慢跑 10 公里",
+        "project": "Jogging",
+        "location": "上海",
+        "date": "8/20/2023",
+        "activityId": "card2",
+        "gif": "https://charleswang.us/thriving/images/jogging.gif"
+    },
+    {
+        "name": "阿笠博士",
+        "alias": "charleswang",
+        "project_zh": "12 點前就寢",
+        "project": "Sleep",
+        "location": "無錫",
+        "date": "9/2/2023",
+        "activityId": "card6",
+        "gif": "https://charleswang.us/thriving/images/sleep.gif"
+    }
+]

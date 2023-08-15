@@ -5,10 +5,11 @@ Vue.use(Vuetify);
 
 export default new Vuetify({
   theme: {
+    dark: true,
     themes: {
       light: {
-        primary: "hsl(0, 0%, 100%)",
-        background: "hsl(0, 0%, 98%)",
+        primary: "hsl(100, 0%, 100%)",
+        background: "hsl(100, 0%, 98%)",
         input: "hsl(0, 0%, 52%)",
         text: "hsl(200, 15%, 8%)",
       },

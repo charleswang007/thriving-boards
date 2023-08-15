@@ -2,23 +2,11 @@
   <v-container>
     <v-row>
       <v-col>
-        <v-text-field
-          label="Search"
-          v-model="search"
-          solo
-          prepend-inner-icon="mdi-magnify"
-          clearable
-          @click:clear="clearSearch"
-        >
-        </v-text-field
-      ></v-col>
-      <v-spacer class="d-none d-md-flex d-lg-flex"></v-spacer>
-      <v-col>
         <v-select
-          v-model="region"
-          @change="regionChange"
-          label="Filter by region"
-          :items="regions"
+          v-model="quarter"
+          @change="quarterChange"
+          label="Filter by Quarters"
+          :items="quarters"
           item-text="name"
           item-value="code"
           solo
@@ -26,62 +14,85 @@
         >
         </v-select>
       </v-col>
+      <v-col>
+        <v-select
+          v-model="location"
+          @change="locationChange"
+          label="Filter by Location"
+          :items="locations"
+          item-text="name"
+          item-value="code"
+          solo
+          clearable
+        >
+        </v-select>
+      </v-col>
+      <v-spacer class="d-none d-md-flex d-lg-flex"></v-spacer>
+      <v-col><h2><marquee Width="350" ScrollAmount="8">為何獨自努力，跟隨隊友一起</marquee></h2></v-col>
     </v-row>
     <v-row>
-      <v-col v-for="country in countries" :key="country.alpha3Code" md="3">
-        <country-card v-bind="country"></country-card>
+      <v-col v-for="activity in activities" :key="activity.activityId" md="3">
+        <activity-card v-bind="activity"></activity-card>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
-import CountryCard from "../components/CountryCard.vue";
+import ActivityCard from "../components/ActivityCard.vue";
 
 export default {
   name: "Home",
   components: {
-    "country-card": CountryCard,
+    "activity-card": ActivityCard,
   },
   data() {
     return {
-      countries: [],
+      activities: [],
       search: null,
-      region: null,
-      regions: ["Africa", "Americas", "Asia", "Europe", "Oceania"],
+      location: null,
+      locations: ["Taipei", "Shanghai", "Wuxi"],
+      quarter: null,
+      quarters: ["FY24Q1", "FY24Q2", "FY24Q3"],
     };
   },
   mounted() {
-    this.getCountries();
+    this.getActivities();
   },
   watch: {
     search: {
       immediate: true,
       handler(val) {
         if (val) {
-          this.region = null;
-          this.getCountries();
+          this.location = null;
+          this.getActivities();
         }
       },
     },
   },
   methods: {
-    regionChange() {
+    locationChange() {
       this.search = null;
-      this.getCountries();
+      this.getActivities();
+    },
+    quarterChange() {
+      this.search = null;
+      this.getActivities();
     },
     clearSearch() {
       setTimeout(() => {
         this.search = null;
-        this.getCountries();
+        this.getActivities();
       }, 100);
     },
-    getCountries() {
-      let url = "all";
+    getActivities() {
+      let url = "test.json";
       if (this.search) {
         url = `name/${this.search}`;
-      } else if (this.region) {
-        url = `region/${this.region.toLowerCase()}`;
+      } else if (this.location) {
+        url = `location/${this.location.toLowerCase()}`;
+      } else if (this.quarter) {
+        url = `quarter/${this.quarter.toLowerCase()}`;
       }
       setTimeout(() => {
         this.callAPI(url);
@@ -92,7 +103,7 @@ export default {
         .get(url)
         .then((response) => {
           if (response.status == 200) {
-            this.countries = response.data;
+            this.activities = response.data;
           }
         })
         .catch((error) => {

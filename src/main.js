@@ -14,7 +14,7 @@ const api = axios.create({
   baseURL:
     process.env.VUE_APP_API_URL !== undefined
       ? process.env.VUE_APP_API_URL
-      : "https://restcountries.com/v2/",
+      : "https://charleswang.us/thriving/",
 });
 
 //API call prototype variable

@@ -1,4 +1,4 @@
 module.exports = {
   transpileDependencies: ["vuetify"],
-  publicPath: "/vue-world/",
+  publicPath: "/thriving-boards/",
 };

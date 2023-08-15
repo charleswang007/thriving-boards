@@ -1,6 +1,6 @@
 <template>
   <v-app-bar app>
-    <div class="d-flex align-center"><h2>Where in the world?</h2></div>
+    <div class="d-flex align-center"><h2>Thriving Boards</h2></div>
     <v-spacer></v-spacer>
     <v-btn text @click="darkMode">
       <font-awesome-icon
@@ -10,7 +10,7 @@
       />
       <font-awesome-icon v-else icon="fa-solid fa-moon" size="lg" />
       <span class="ml-2">
-        {{ $vuetify.theme.dark ? "Ligh Mode" : "Dark Mode" }}</span
+        {{ $vuetify.theme.dark ? "Light Mode" : "Dark Mode" }}</span
       >
     </v-btn>
   </v-app-bar>
