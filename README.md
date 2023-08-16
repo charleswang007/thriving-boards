@@ -1,4 +1,5 @@
 ### Live Demo
+https://charleswang007.github.io/thriving-boards/
 
 ### Run Project Locally
 ```
