@@ -86,7 +86,7 @@ export default {
       }, 100);
     },
     getActivities() {
-      let url = "test.json";
+      let url = "all.json";
       if (this.search) {
         url = `name/${this.search}`;
       } else if (this.location) {
