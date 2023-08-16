@@ -28,7 +28,7 @@
         </v-select>
       </v-col>
       <v-spacer class="d-none d-md-flex d-lg-flex"></v-spacer>
-      <v-col><h2><marquee Width="350" ScrollAmount="8">為何獨自努力，跟隨隊友一起</marquee></h2></v-col>
+      <v-col><h2><marquee Width="350" ScrollAmount="8">為何獨自努力？跟隨隊友一起</marquee></h2></v-col>
     </v-row>
     <v-row>
       <v-col v-for="activity in activities" :key="activity.activityId" md="3">

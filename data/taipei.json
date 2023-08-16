@@ -1,32 +1,62 @@
 [
-    {
-        "name": "江戶川柯南",
-        "alias": "charleswang",
-        "project_zh": "游泳 2000 米",
-        "project": "Swimming",
-        "location": "台北",
-        "date": "8/15/2023",
-        "activityId": "card1",
-        "gif": "https://charleswang.us/thriving/images/swimming.gif"
-    },
-    {
-        "name": "灰原哀",
-        "alias": "charleswang",
-        "project_zh": "游泳 2000 米",
-        "project": "Ukulele",
-        "location": "台北",
-        "date": "8/16/2023",
-        "activityId": "card4",
-        "gif": "https://charleswang.us/thriving/images/ukulele.gif"
-    },
-    {
-        "name": "服部平次",
-        "alias": "charleswang",
-        "project_zh": "終於敢打蟑螂",
-        "project": "Cockroaches",
-        "location": "台北",
-        "date": "8/22/2023",
-        "activityId": "card7",
-        "gif": "https://charleswang.us/thriving/images/cockroaches.gif"
-    }
+  {
+    "name": "江戶川柯南",
+    "alias": "Conan Edogawa",
+    "project_zh": "游泳 2000 米",
+    "project": "Swimming",
+    "location": "台北",
+    "date": "8/15/2023",
+    "activityId": "card1",
+    "gif": "https://charleswang.us/thriving/images/swimming.gif"
+  },
+  {
+    "name": "灰原哀",
+    "alias": "Ai Haibara",
+    "project_zh": "游泳 2000 米",
+    "project": "Ukulele",
+    "location": "台北",
+    "date": "8/16/2023",
+    "activityId": "card4",
+    "gif": "https://charleswang.us/thriving/images/ukulele.gif"
+  },
+  {
+    "name": "服部平次",
+    "alias": "Harley Hartwell",
+    "project_zh": "終於敢打蟑螂",
+    "project": "Cockroaches",
+    "location": "台北",
+    "date": "8/22/2023",
+    "activityId": "card7",
+    "gif": "https://charleswang.us/thriving/images/cockroaches.gif"
+  },
+  {
+    "name": "吉田步美",
+    "alias": "Amy Yoshida",
+    "project_zh": "成為 Case Killer",
+    "project": "Case Killer",
+    "location": "台北",
+    "date": "8/15/2023",
+    "activityId": "card9",
+    "gif": "https://charleswang.us/thriving/images/killer.gif"
+  },
+  {
+    "name": "目暮十三",
+    "alias": "Joseph Meguire",
+    "project_zh": "連續深蹲 60 下",
+    "project": "Squat",
+    "location": "台北",
+    "date": "8/16/2023",
+    "activityId": "card12",
+    "gif": "https://charleswang.us/thriving/images/squat.gif"
+  },
+  {
+    "name": "白鳥任三郎",
+    "alias": "Nicholas Santos",
+    "project_zh": "一週只吃一餐麥當勞",
+    "project": "Diet",
+    "location": "台北",
+    "date": "8/22/2023",
+    "activityId": "card15",
+    "gif": "https://charleswang.us/thriving/images/diet.gif"
+  }
 ]
