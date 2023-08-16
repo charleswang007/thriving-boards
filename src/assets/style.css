@@ -5,3 +5,7 @@ body{
 .btn{
     text-transform: none;
 }
+.slogan {
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 500;
+}

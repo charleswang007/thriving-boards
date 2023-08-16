@@ -21,4 +21,5 @@ export default {
 </script>
 <style>
 @import "./assets/style.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200&display=swap');
 </style>
