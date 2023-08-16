@@ -9,9 +9,13 @@ https://charleswang007.github.io/thriving-boards/
 4. npm run serve
 ```
 
+### Publish
+```
+npm run deploy
+```
+
 ### Technologies
 - Vue.js
-- restcountries api
 - JavaScript
 - HTML5
 - CSS3
