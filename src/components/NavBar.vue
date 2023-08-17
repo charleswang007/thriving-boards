@@ -26,12 +26,24 @@ export default {
   methods: {
     darkMode() {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+      var r = document.querySelector(':root');
+      if (this.$vuetify.theme.dark){
+        r.style.setProperty('--bg-color', '#003d66');
+        r.style.setProperty('--bg-color-hover', '#262626');
+      } else {
+        r.style.setProperty('--bg-color', '#ffffe6');
+        r.style.setProperty('--bg-color-hover', '#ffffb3');
+      }
     },
   },
 };
 </script>
 
 <style>
+:root {
+  --bg-color: #003d66;
+  --bg-color-hover: #262626;
+}
 .navbar {
   display: flex;
   position: fixed;
@@ -50,5 +62,17 @@ export default {
 .title {
   font-weight: 800;
   font-size: 3vh;
+}
+.v-card__text {
+  background-color: var(--bg-color)
+}
+.v-card__text:hover {
+  background-color: var(--bg-color-hover)
+}
+.theme--light.v-application {
+    background: #cccccc !important;
+}
+.theme--light.v-card > .v-card__text, .theme--light.v-card > .v-card__subtitle {
+    color: #1a1a1a !important;
 }
 </style>
