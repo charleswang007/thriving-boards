@@ -9,7 +9,3 @@ body{
     font-family: 'Noto Serif TC', serif;
     font-weight: 600;
 }
-
-.transform-me:hover {
-    transform: scale(3.5) translate(52px,60px);
-}

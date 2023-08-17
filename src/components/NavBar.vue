@@ -70,9 +70,15 @@ export default {
   background-color: var(--bg-color-hover)
 }
 .theme--light.v-application {
-    background: #cccccc !important;
+  background: #cccccc !important;
 }
 .theme--light.v-card > .v-card__text, .theme--light.v-card > .v-card__subtitle {
-    color: #1a1a1a !important;
+  color: #1a1a1a !important;
+}
+.transform-me {
+  transition: 2s;
+}
+.transform-me:hover {
+  transform: scale(3.5) translate(52px,60px);
 }
 </style>
