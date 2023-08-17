@@ -35,6 +35,10 @@
         <activity-card v-bind="activity"></activity-card>
       </v-col>
     </v-row>
+    <v-row><p></p></v-row>
+    <v-row><p></p></v-row>
+    <v-row><p></p></v-row>
+    <v-row><p></p></v-row>
   </v-container>
 </template>
 
