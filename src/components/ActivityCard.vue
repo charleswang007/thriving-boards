@@ -20,7 +20,7 @@ export default {
     project: { type: String, default: null },
     location: { type: String, default: null },
     date: { type: String, default: null },
-    activityId: { type: String, default: "NA" },
+    activityId: { type: String, default: null },
   },
   methods: {
     gotoDetails() {

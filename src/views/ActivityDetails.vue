@@ -13,7 +13,7 @@
       </v-col>
       <v-col md="6" sm="12" xs="12" class="pa-2">
         <div class="mt-8">
-          <h2>{{ activity.name }}</h2><p>{{ activity.alias ? activity.alias : "NA" }}</p>
+          <h2>{{ activity.name }}</h2><p>{{ activity.alias ? activity.alias : "N/A" }}</p>
           <v-row class="mt-3">
             <v-col lg="12" md="12" sm="12" xs="12">
               <div
@@ -28,8 +28,6 @@
                   <div><b>項目 (英): </b>{{ activity.project }}</div>
                   <div><b>地點: </b>{{ activity.location }}</div>
                   <div><b>時間: </b>{{ activity.date }}</div>
-                </div>
-                <div>
                   <div><b>介紹: </b>{{ activity.intro }}</div>
                 </div>
               </div>
