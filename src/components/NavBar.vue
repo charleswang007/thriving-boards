@@ -2,6 +2,11 @@
   <v-app-bar app>
     <div class="d-flex align-center"><h2>Thriving Boards</h2></div>
     <v-spacer></v-spacer>
+    <div class="transform-me">
+      <!-- <font-awesome-icon icon="fa-solid fa-qrcode" size="lg" /> -->
+      <img src="qrcode.png" width="32" height="32">
+    </div>
+    <span class="ml-2">掃碼加入&nbsp;&nbsp;</span>
     <v-btn text @click="darkMode">
       <font-awesome-icon
         v-if="$vuetify.theme.dark"
