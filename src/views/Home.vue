@@ -5,7 +5,7 @@
         <v-select
           v-model="quarter"
           @change="quarterChange"
-          label="Filter by Quarter"
+          label="Quarter"
           :items="quarters"
           item-text="name"
           item-value="code"
@@ -18,7 +18,7 @@
         <v-select
           v-model="location"
           @change="locationChange"
-          label="Filter by Location"
+          label="Location"
           :items="locations"
           item-text="name"
           item-value="code"
