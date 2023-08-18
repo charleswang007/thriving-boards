@@ -21,10 +21,8 @@
                 style="height: 100%"
               >
                 <div>
-                  <div>
-                    <b>項目 (中): </b
-                    >{{ activity.project_zh }}
-                  </div>
+                  <div><b>ID: </b>{{ this.code.replace('card','') }}</div>
+                  <div><b>項目 (中): </b>{{ activity.project_zh }}</div>
                   <div><b>項目 (英): </b>{{ activity.project }}</div>
                   <div><b>地點: </b>{{ activity.location }}</div>
                   <div><b>時間: </b>{{ activity.date }}</div>
