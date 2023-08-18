@@ -22,6 +22,12 @@
             size="lg"
           />
           <span v-if="like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <font-awesome-icon
+            v-if="creative"
+            icon="fa-solid fa-lightbulb"
+            size="lg"
+          />
+          <span v-if="creative">&nbsp;&nbsp;&nbsp;&nbsp;</span>
           <font-awesome-icon icon="fa-solid fa-flag" size="lg" />&nbsp;&nbsp;&nbsp;&nbsp;
           <font-awesome-icon icon="fa-solid fa-fire-flame-curved" size="lg" />
         </div>
@@ -42,6 +48,7 @@ export default {
     activityId: { type: String, default: null },
     popular: { type: Boolean, default: null },
     like: { type: Boolean, default: null },
+    creative: { type: Boolean, default: null },
   },
   methods: {
     gotoDetails() {

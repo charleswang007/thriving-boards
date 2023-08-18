@@ -4,7 +4,7 @@ import axios from "axios";
 import router from "./router";
 import "./utils/filter";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faMoon, faSun, faFlag, faFireFlameCurved, faTrophy, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faMoon, faSun, faFlag, faFireFlameCurved, faTrophy, faHeart, faLightbulb } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import vuetify from "./plugins/vuetify";
 
@@ -27,6 +27,7 @@ library.add(faFlag);
 library.add(faFireFlameCurved);
 library.add(faTrophy);
 library.add(faHeart);
+library.add(faLightbulb);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 new Vue({

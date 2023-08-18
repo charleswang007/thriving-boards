@@ -2,8 +2,15 @@
   <v-app-bar app>
     <div class="d-flex align-center"><h2>Thriving Boards</h2></div>
     <v-spacer></v-spacer>
+    <div>
+      <font-awesome-icon icon="fa-solid fa-flag" size="lg" />&nbsp;&nbsp;Thrive &nbsp;&nbsp;
+      <font-awesome-icon icon="fa-solid fa-fire-flame-curved" size="lg" />&nbsp;&nbsp;Energy&nbsp;&nbsp;
+      <font-awesome-icon icon="fa-solid fa-heart" size="lg" />&nbsp;&nbsp;Like &nbsp;&nbsp;
+      <font-awesome-icon icon="fa-solid fa-lightbulb" size="lg" />&nbsp;&nbsp;Creativity &nbsp;&nbsp;
+      <font-awesome-icon icon="fa-solid fa-trophy" size="lg" />&nbsp;&nbsp;Achievement
+    </div>
+    <v-spacer></v-spacer>
     <div class="transform-me">
-      <!-- <font-awesome-icon icon="fa-solid fa-qrcode" size="lg" /> -->
       <img src="qrcode-1.png" width="32" height="32">
     </div>
     <span class="ml-2">掃碼加入&nbsp;&nbsp;</span>
