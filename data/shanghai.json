@@ -5,8 +5,9 @@
     "project_zh": "慢跑 10 公里",
     "project": "Jogging",
     "location": "上海",
-    "date": "8/20/2023",
+    "date": "10/22/2023",
     "activityId": "card2",
+    "popular": true,
     "gif": "https://charleswang.us/thriving/images/jogging.gif"
   },
   {
@@ -17,6 +18,8 @@
     "location": "上海",
     "date": "8/21/2023",
     "activityId": "card5",
+    "popular": true,
+    "like": true,
     "gif": "https://charleswang.us/thriving/images/oppenheimer.gif"
   },
   {
@@ -35,7 +38,7 @@
     "project_zh": "每天遛狗",
     "project": "Dog Walking",
     "location": "上海",
-    "date": "8/20/2023",
+    "date": "11/5/2023",
     "activityId": "card10",
     "gif": "https://charleswang.us/thriving/images/dog-walking.gif"
   },
@@ -58,5 +61,25 @@
     "date": "9/3/2023",
     "activityId": "card16",
     "gif": "https://charleswang.us/thriving/images/dance.gif"
+  },
+  {
+    "name": "琴酒",
+    "alias": "Gin",
+    "project_zh": "上海買房",
+    "project": "Bought A House",
+    "location": "上海",
+    "date": "1/4/2024",
+    "activityId": "card17",
+    "gif": "https://charleswang.us/thriving/images/house.gif"
+  },
+  {
+    "name": "烏丸蓮耶",
+    "alias": "BOSS",
+    "project_zh": "一週三個 Customer Hero",
+    "project": "Customer Hero",
+    "location": "上海",
+    "date": "9/3/2023",
+    "activityId": "card20",
+    "gif": "https://charleswang.us/thriving/images/superman.gif"
   }
 ]

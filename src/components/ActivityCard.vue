@@ -7,6 +7,25 @@
       <div><b>項目 (英): </b>{{ project }}</div>
       <div><b>時間: </b>{{ date }}</div>
       <div><b>地點: </b>{{ location }}</div>
+      <div style="display: flex;">
+        <div style="flex-grow: 1;"><b>ID: </b>{{ activityId.replace('card','') }}</div>
+        <div>
+          <font-awesome-icon
+            v-if="popular"
+            icon="fa-solid fa-trophy"
+            size="lg"
+          />
+          <span v-if="popular">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <font-awesome-icon
+            v-if="like"
+            icon="fa-solid fa-heart"
+            size="lg"
+          />
+          <span v-if="like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <font-awesome-icon icon="fa-solid fa-flag" size="lg" />&nbsp;&nbsp;&nbsp;&nbsp;
+          <font-awesome-icon icon="fa-solid fa-fire-flame-curved" size="lg" />
+        </div>
+      </div>
     </v-card-text>
   </v-card>
 </template>
@@ -21,6 +40,8 @@ export default {
     location: { type: String, default: null },
     date: { type: String, default: null },
     activityId: { type: String, default: null },
+    popular: { type: Boolean, default: null },
+    like: { type: Boolean, default: null },
   },
   methods: {
     gotoDetails() {

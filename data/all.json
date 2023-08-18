@@ -5,8 +5,9 @@
     "project_zh": "游泳 2000 米",
     "project": "Swimming",
     "location": "台北",
-    "date": "8/15/2023",
+    "date": "10/14/2023",
     "activityId": "card1",
+    "popular": true,
     "gif": "https://charleswang.us/thriving/images/swimming.gif"
   },
   {
@@ -15,8 +16,9 @@
     "project_zh": "慢跑 10 公里",
     "project": "Jogging",
     "location": "上海",
-    "date": "8/20/2023",
+    "date": "10/22/2023",
     "activityId": "card2",
+    "popular": true,
     "gif": "https://charleswang.us/thriving/images/jogging.gif"
   },
   {
@@ -27,6 +29,7 @@
     "location": "無錫",
     "date": "9/1/2023",
     "activityId": "card3",
+    "like": true,
     "gif": "https://charleswang.us/thriving/images/coding.gif"
   },
   {
@@ -37,6 +40,7 @@
     "location": "台北",
     "date": "8/16/2023",
     "activityId": "card4",
+    "like": true,
     "gif": "https://charleswang.us/thriving/images/ukulele.gif"
   },
   {
@@ -47,6 +51,8 @@
     "location": "上海",
     "date": "8/21/2023",
     "activityId": "card5",
+    "popular": true,
+    "like": true,
     "gif": "https://charleswang.us/thriving/images/oppenheimer.gif"
   },
   {
@@ -55,7 +61,7 @@
     "project_zh": "12 點前就寢",
     "project": "Sleep",
     "location": "無錫",
-    "date": "9/2/2023",
+    "date": "10/30/2023",
     "activityId": "card6",
     "gif": "https://charleswang.us/thriving/images/sleep.gif"
   },
@@ -95,7 +101,7 @@
     "project_zh": "每天遛狗",
     "project": "Dog Walking",
     "location": "上海",
-    "date": "8/20/2023",
+    "date": "11/5/2023",
     "activityId": "card10",
     "gif": "https://charleswang.us/thriving/images/dog-walking.gif"
   },
@@ -115,7 +121,7 @@
     "project_zh": "連續深蹲 60 下",
     "project": "Squat",
     "location": "台北",
-    "date": "8/16/2023",
+    "date": "11/17/2023",
     "activityId": "card12",
     "gif": "https://charleswang.us/thriving/images/squat.gif"
   },
@@ -135,7 +141,7 @@
     "project_zh": "2K 贏對手 50 分",
     "project": "NBA 2K",
     "location": "無錫",
-    "date": "9/2/2023",
+    "date": "12/8/2023",
     "activityId": "card14",
     "gif": "https://charleswang.us/thriving/images/nba2k.gif"
   },
@@ -158,5 +164,45 @@
     "date": "9/3/2023",
     "activityId": "card16",
     "gif": "https://charleswang.us/thriving/images/dance.gif"
+  },
+  {
+    "name": "琴酒",
+    "alias": "Gin",
+    "project_zh": "上海買房",
+    "project": "Bought A House",
+    "location": "上海",
+    "date": "1/4/2024",
+    "activityId": "card17",
+    "gif": "https://charleswang.us/thriving/images/house.gif"
+  },
+  {
+    "name": "伏特加",
+    "alias": "Vodka",
+    "project_zh": "結婚",
+    "project": "Getting Married",
+    "location": "無錫",
+    "date": "9/2/2023",
+    "activityId": "card18",
+    "gif": "https://charleswang.us/thriving/images/married.gif"
+  },
+  {
+    "name": "蘭姆",
+    "alias": "Rum",
+    "project_zh": "生子",
+    "project": "Newborn Baby",
+    "location": "台北",
+    "date": "8/22/2023",
+    "activityId": "card19",
+    "gif": "https://charleswang.us/thriving/images/baby.gif"
+  },
+  {
+    "name": "烏丸蓮耶",
+    "alias": "BOSS",
+    "project_zh": "一週三個 Customer Hero",
+    "project": "Customer Hero",
+    "location": "上海",
+    "date": "9/3/2023",
+    "activityId": "card20",
+    "gif": "https://charleswang.us/thriving/images/superman.gif"
   }
 ]

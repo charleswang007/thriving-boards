@@ -7,6 +7,7 @@
     "location": "無錫",
     "date": "9/1/2023",
     "activityId": "card3",
+    "like": true,
     "gif": "https://charleswang.us/thriving/images/coding.gif"
   },
   {
@@ -15,7 +16,7 @@
     "project_zh": "12點前就寢",
     "project": "Sleep",
     "location": "無錫",
-    "date": "9/2/2023",
+    "date": "10/30/2023",
     "activityId": "card6",
     "gif": "https://charleswang.us/thriving/images/sleep.gif"
   },
@@ -35,8 +36,18 @@
     "project_zh": "2K 贏對手 50 分",
     "project": "NBA 2K",
     "location": "無錫",
-    "date": "9/2/2023",
+    "date": "12/8/2023",
     "activityId": "card14",
     "gif": "https://charleswang.us/thriving/images/nba2k.gif"
+  },
+  {
+    "name": "伏特加",
+    "alias": "Vodka",
+    "project_zh": "結婚",
+    "project": "Getting Married",
+    "location": "無錫",
+    "date": "9/2/2023",
+    "activityId": "card18",
+    "gif": "https://charleswang.us/thriving/images/married.gif"
   }
 ]

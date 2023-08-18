@@ -1,11 +1,11 @@
 {
   "name": "江戶川柯南",
   "intro": "我在台北大湖公園游泳池游泳，水波蕩漾，清涼宜人。身體在水中自由劃動，釋放壓力。陽光灑在水面，熠熠生輝。歡笑聲迴盪在空氣中，留下愉悅的回憶。這是一個暢快享受的健康時光。",
-  "date": "8/15/2023",
+  "date": "10/14/2023",
   "location": "台北",
   "project": "Swimming",
   "project_zh": "游泳 2000 米",
   "alias": "Conan Edogawa",
   "gif": "https://charleswang.us/thriving/images/swimming.gif",
-  "quarters": ["FY24Q1", "FY24Q2"]
+  "quarters": ["FY24Q2"]
 }

@@ -79,6 +79,6 @@ export default {
   transition: 2s;
 }
 .transform-me:hover {
-  transform: scale(3.5) translate(52px,60px);
+  transform: scale(3.5) translate(53px,60px);
 }
 </style>

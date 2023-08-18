@@ -1,1 +1,12 @@
-﻿[]
+﻿[
+  {
+    "name": "琴酒",
+    "alias": "Gin",
+    "project_zh": "上海買房",
+    "project": "Bought A House",
+    "location": "上海",
+    "date": "1/24/2024",
+    "activityId": "card17",
+    "gif": "https://charleswang.us/thriving/images/house.gif"
+  }
+]
