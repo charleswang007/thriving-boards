@@ -52,7 +52,7 @@ export default {
   top: 0;
   width: 100%;
   overflow: hidden;
-  background-color: #000000;
+  background-color: #1a1a1a;
   -webkit-box-shadow: -3px 18px 27px -24px rgba(0, 0, 0, 0.38);
   box-shadow: -3px 18px 27px -24px rgba(0, 0, 0, 0.38);
 }
