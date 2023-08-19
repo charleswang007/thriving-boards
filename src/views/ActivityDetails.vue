@@ -12,7 +12,7 @@
         <v-img :src="activity.gif"></v-img>
       </v-col>
       <v-col md="6" sm="12" xs="12" class="pa-2">
-        <div class="mt-8">
+        <div class="mt-2">
           <h2>{{ activity.name }}</h2><p>{{ activity.alias ? activity.alias : "N/A" }}</p>
           <v-row class="mt-3">
             <v-col lg="12" md="12" sm="12" xs="12">
