@@ -14,6 +14,16 @@ https://charleswang007.github.io/thriving-boards/
 npm run deploy
 ```
 
+### Publish to Azure App Service
+1. vue.config.js
+```
+//publicPath: "/thriving-boards/",
+publicPath:"./",
+outputDir:"dist",
+```
+2. npm run build
+3. right click on dist folder, select "deploy to web app".
+
 ### Technologies
 - Vue.js
 - JavaScript

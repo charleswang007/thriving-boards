@@ -11,7 +11,7 @@
     </div>
     <v-spacer></v-spacer>
     <div class="transform-me">
-      <img src="qrcode-1.png" width="32" height="32">
+      <img src="qrcode-2.png" width="32" height="32">
     </div>
     <span class="ml-2">掃碼加入&nbsp;&nbsp;</span>
     <v-btn text @click="darkMode">
