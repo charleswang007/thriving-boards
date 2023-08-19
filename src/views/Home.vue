@@ -27,6 +27,19 @@
         >
         </v-select>
       </v-col>
+      <v-col>
+        <v-select
+          v-model="badge"
+          @change="badgeChange"
+          label="Badge"
+          :items="badges"
+          item-text="name"
+          item-value="code"
+          solo
+          clearable
+        >
+        </v-select>
+      </v-col>
       <v-spacer class="d-none d-md-flex d-lg-flex"></v-spacer>
       <v-col><h2 class="slogan"><marquee Width="500" ScrollAmount="8">為何獨自努力？跟隨隊友一起</marquee></h2></v-col>
     </v-row>
@@ -57,6 +70,8 @@ export default {
       locations: ["Taipei", "Shanghai", "Wuxi"],
       quarter: null,
       quarters: ["FY24Q1", "FY24Q2", "FY24Q3"],
+      badge: "Badge",
+      badges: ["Thrive", "Energy", "Like", "Creativity", "Achievement"],
     };
   },
   mounted() {
@@ -82,6 +97,10 @@ export default {
       this.search = null;
       this.getActivities();
     },
+    badgeChange() {
+      this.search = null;
+      this.getBadgeActivities();
+    },
     clearSearch() {
       setTimeout(() => {
         this.search = null;
@@ -101,12 +120,48 @@ export default {
         this.callAPI(url);
       });
     },
+    getBadgeActivities() {
+      let url = "all.json";
+      setTimeout(() => {
+        switch (this.badge) {
+          case 'Thrive':
+            this.callAPI(url);
+            break;
+          case 'Energy':
+            this.callAPI(url);
+            break;
+          case 'Like':
+            this.callFilterAPI(url, "like");
+            break;
+          case 'Creativity':
+            this.callFilterAPI(url, "creative");
+            break;
+          case 'Achievement':
+            this.callFilterAPI(url, "popular");
+            break;
+          default:
+            this.callAPI(url);
+        }
+      });
+    },
     callAPI(url) {
       this.$http
         .get(url)
         .then((response) => {
           if (response.status == 200) {
             this.activities = response.data;
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+    callFilterAPI(url, filter) {
+      this.$http
+        .get(url)
+        .then((response) => {
+          if (response.status == 200) {
+            this.activities = response.data.filter(x => x[filter] == true)
           }
         })
         .catch((error) => {
