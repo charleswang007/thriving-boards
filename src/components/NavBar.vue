@@ -13,7 +13,7 @@
     <div class="transform-me">
       <img src="qrcode-2.png" width="32" height="32">
     </div>
-    <span class="ml-2">掃碼加入&nbsp;&nbsp;</span>
+    <span class="ml-2">掃碼加入 | <a href="https://forms.office.com/r/sGY3XpCAQA" target="_blank">填寫表單</a>&nbsp;&nbsp;</span>
     <v-btn text @click="darkMode">
       <font-awesome-icon
         v-if="$vuetify.theme.dark"
@@ -37,9 +37,11 @@ export default {
       if (this.$vuetify.theme.dark){
         r.style.setProperty('--bg-color', '#003d66');
         r.style.setProperty('--bg-color-hover', '#262626');
+        r.style.setProperty('--link-color', '#b3ecff');
       } else {
         r.style.setProperty('--bg-color', '#ffffe6');
         r.style.setProperty('--bg-color-hover', '#ffffb3');
+        r.style.setProperty('--link-color', '#004d99');
       }
     },
   },
@@ -50,6 +52,7 @@ export default {
 :root {
   --bg-color: #003d66;
   --bg-color-hover: #262626;
+  --link-color: #b3ecff;
 }
 .navbar {
   display: flex;
@@ -86,6 +89,9 @@ export default {
   transition: 2s;
 }
 .transform-me:hover {
-  transform: scale(3.5) translate(53px,60px);
+  transform: scale(3.5) translate(74px,60px);
+}
+a {
+    color: var(--link-color) !important;
 }
 </style>

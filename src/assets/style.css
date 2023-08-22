@@ -9,3 +9,11 @@ body{
     font-family: 'Noto Serif TC', serif;
     font-weight: 600;
 }
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
