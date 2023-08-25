@@ -13,7 +13,15 @@
     <div class="transform-me">
       <img src="qrcode-2.png" width="32" height="32">
     </div>
-    <span class="ml-2">掃碼加入 |<a href="https://forms.office.com/r/sGY3XpCAQA" target="_blank">&nbsp;填寫表單</a>&nbsp;|&nbsp;<a class="wordcloud" href="https://charlesstorage1.z7.web.core.windows.net/" target="_blank">文字雲</a>&nbsp;&nbsp;</span>
+    <Fancybox
+      :options="{
+        Carousel: {
+          infinite: false,
+        },
+      }"
+    >
+      <span class="ml-2">掃碼加入 |<a href="https://forms.office.com/r/sGY3XpCAQA" target="_blank">&nbsp;填寫表單</a>&nbsp;|&nbsp;<a class="wordcloud" data-fancybox="wordcloud" href="https://charlesstorage1.z7.web.core.windows.net/" target="_blank">文字雲</a>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    </Fancybox>
     <v-btn text @click="darkMode">
       <font-awesome-icon
         v-if="$vuetify.theme.dark"
@@ -29,7 +37,12 @@
 </template>
 
 <script>
+import Fancybox from './Fancybox.vue';
+
 export default {
+  components: {
+    Fancybox,
+  },
   methods: {
     darkMode() {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
@@ -92,7 +105,7 @@ export default {
   transition: 2s;
 }
 .transform-me:hover {
-  transform: scale(3.5) translate(91px,60px);
+  transform: scale(3.5) translate(93px,60px);
 }
 a {
   color: var(--link-color) !important;
