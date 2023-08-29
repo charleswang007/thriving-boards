@@ -11,7 +11,7 @@
     </div>
     <v-spacer></v-spacer>
     <div class="transform-me">
-      <img src="qrcode-2.png" width="32" height="32">
+      <img src="qrcode-3.png" width="32" height="32">
     </div>
     <Fancybox
       :options="{
