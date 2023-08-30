@@ -2,6 +2,7 @@
 node_modules
 scripts
 dist
+videos
 
 # local env files
 .env.local

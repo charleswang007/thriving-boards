@@ -51,6 +51,15 @@
     <v-row><p></p></v-row>
     <v-row><p></p></v-row>
     <v-row><p></p></v-row>
+    <div class="center"> 
+      <h2 class="carousel" style="text-align:center;">Thrive Carousel</h2>
+      <video class="center" width="1400" height="550" controls autoplay loop>
+        <source src="carousel-small.mp4" type="video/mp4">
+      </video>
+    </div>
+    <v-row><p></p></v-row>
+    <v-row><p></p></v-row>
+    <v-row><p></p></v-row>
   </v-container>
 </template>
 

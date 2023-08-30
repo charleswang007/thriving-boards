@@ -9,11 +9,19 @@ body{
     font-family: 'Noto Serif TC', serif;
     font-weight: 600;
 }
-
+.carousel {
+    font-family: 'Amatic SC', cursive;
+    font-size: xxx-large;
+    font-weight: 600;
+}
 a:link {
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: none;
+}
+.center {
+    margin: auto;
+    width: 100%;
+    padding: 0px;
 }
