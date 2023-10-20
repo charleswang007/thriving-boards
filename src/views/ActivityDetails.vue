@@ -69,7 +69,7 @@ export default {
     },
     getActivityDetails() {
       this.$http
-        .get(`cards/${this.code}`)
+        .get(`sample/cards/${this.code}`)
         .then((response) => {
           if (response.status == 200) {
             const data = response.data;

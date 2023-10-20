@@ -33,4 +33,4 @@ outputDir:"dist",
 - npm
 
 ### Screenshot
-![screenshot](screenshot.png)
+![screenshot](screenshot1.png)

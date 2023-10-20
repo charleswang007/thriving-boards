@@ -117,20 +117,20 @@ export default {
       }, 100);
     },
     getActivities() {
-      let url = "all.json";
+      let url = "sample/all.json";
       if (this.search) {
-        url = `name/${this.search}`;
+        url = `sample/name/${this.search}`;
       } else if (this.location) {
-        url = `location/${this.location.toLowerCase()}`;
+        url = `sample/location/${this.location.toLowerCase()}`;
       } else if (this.quarter) {
-        url = `quarter/${this.quarter.toLowerCase()}`;
+        url = `sample/quarter/${this.quarter.toLowerCase()}`;
       }
       setTimeout(() => {
         this.callAPI(url);
       });
     },
     getBadgeActivities() {
-      let url = "all.json";
+      let url = "sample/all.json";
       setTimeout(() => {
         switch (this.badge) {
           case 'Thrive':

@@ -1,0 +1,11 @@
+{
+  "name": "阿笠博士",
+  "intro": "每天都在 12 點前就寢，享受充足的睡眠。晚上，關閉電子設備，靜心放鬆。躺在床上，思緒平靜，入睡迅速。早晨，醒來時感覺精力充沛，迎接新的一天。保持規律作息，讓身心健康，效率倍增。",
+  "date": "10/30/2023",
+  "location": "無錫",
+  "project": "Sleep",
+  "project_zh": "12 點前就寢",
+  "alias": "Dr. Herschel Agasa",
+  "gif": "https://charleswang.us/thriving/images/sleep.gif",
+  "quarters": ["FY24Q2"]
+}
