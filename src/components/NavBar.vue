@@ -20,7 +20,7 @@
         },
       }"
     >
-      <span class="ml-2">掃碼加入 |<a href="https://forms.office.com/r/sGY3XpCAQA" target="_blank">&nbsp;填寫表單</a>&nbsp;|&nbsp;<a class="wordcloud" data-fancybox="wordcloud" href="https://charlesstorage1.z7.web.core.windows.net/" target="_blank">文字雲</a>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span class="ml-2">掃碼加入 |<a href="https://forms.office.com/r/sGY3XpCAQA" target="_blank">&nbsp;填寫表單</a>&nbsp;|&nbsp;<a class="wordcloud" data-fancybox="wordcloud" href="https://charleswang.us/thriving/sample/wordcloud.png" target="_blank">文字雲</a>&nbsp;&nbsp;&nbsp;&nbsp;</span>
     </Fancybox>
     <v-btn text @click="darkMode">
       <font-awesome-icon
@@ -52,11 +52,17 @@ export default {
         r.style.setProperty('--bg-color-hover', '#262626');
         r.style.setProperty('--link-color', '#b3ecff');
         r.style.setProperty('--link-wordcloud-color', '#d8f728f4');
+        r.style.setProperty('--card-title-color', 'lemonchiffon');
+        r.style.setProperty('--card-subtitle-color', '#b3ecff');
+        r.style.setProperty('--card-subtitle-weight', 'regular');
       } else {
         r.style.setProperty('--bg-color', '#ffffe6');
         r.style.setProperty('--bg-color-hover', '#ffffb3');
         r.style.setProperty('--link-color', '#004d99');
         r.style.setProperty('--link-wordcloud-color', '#006666');
+        r.style.setProperty('--card-title-color', '#0059b3');
+        r.style.setProperty('--card-subtitle-color', '#000000');
+        r.style.setProperty('--card-subtitle-weight', 'bold');
       }
     },
   },
@@ -69,6 +75,9 @@ export default {
   --bg-color-hover: #262626;
   --link-color: #b3ecff;
   --link-wordcloud-color: #d8f728f4;
+  --card-title-color: lemonchiffon;
+  --card-subtitle-color: #b3ecff;
+  --card-subtitle-weight: 'regular';
 }
 .navbar {
   display: flex;
@@ -112,5 +121,12 @@ a {
 }
 a.wordcloud {
   color: var(--link-wordcloud-color) !important;
+}
+.card_title {
+  color: var(--card-title-color) !important;
+}
+.card_subtitle {
+  color: var(--card-subtitle-color) !important;
+  font-weight: var(--card-subtitle-weight) !important;
 }
 </style>
