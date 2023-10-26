@@ -3,12 +3,11 @@
     <v-img height="200" :src="gif"></v-img>
     <v-card-text>
       <div class="card_title">{{ name }}</div>
-      <div><b>項目 (中): </b>{{ project_zh }}</div>
-      <div><b>項目 (英): </b>{{ project }}</div>
-      <div><b>時間: </b>{{ date }}</div>
-      <div><b>地點: </b>{{ location }}</div>
+      <div class="card_subtitle">{{ project_zh }}</div>
+      <div class="card_subtitle_en">{{ project }}</div>
+      <div>{{ date }} @ {{ location }}</div>
       <div style="display: flex;">
-        <div style="flex-grow: 1;"><b>ID: </b>{{ activityId.replace('card','') }}</div>
+        <div style="flex-grow: 1;">ID: {{ activityId.replace('card','') }}</div>
         <div>
           <font-awesome-icon
             v-if="popular"
