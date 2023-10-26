@@ -3,6 +3,8 @@ node_modules
 scripts
 dist
 videos
+data/das
+images
 
 # local env files
 .env.local

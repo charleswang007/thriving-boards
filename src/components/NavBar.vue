@@ -53,16 +53,20 @@ export default {
         r.style.setProperty('--link-color', '#b3ecff');
         r.style.setProperty('--link-wordcloud-color', '#d8f728f4');
         r.style.setProperty('--card-title-color', 'lemonchiffon');
-        r.style.setProperty('--card-subtitle-color', '#b3ecff');
+        r.style.setProperty('--card-subtitle-color', '#96ff99');
         r.style.setProperty('--card-subtitle-weight', 'regular');
+        r.style.setProperty('--card-subtitle-en-color', '#b3ecff');
+        r.style.setProperty('--card-subtitle-en-weight', 'regular');
       } else {
         r.style.setProperty('--bg-color', '#ffffe6');
         r.style.setProperty('--bg-color-hover', '#ffffb3');
         r.style.setProperty('--link-color', '#004d99');
         r.style.setProperty('--link-wordcloud-color', '#006666');
         r.style.setProperty('--card-title-color', '#0059b3');
-        r.style.setProperty('--card-subtitle-color', '#000000');
+        r.style.setProperty('--card-subtitle-color', '#0E6655');
         r.style.setProperty('--card-subtitle-weight', 'bold');
+        r.style.setProperty('--card-subtitle-en-color', '#000000');
+        r.style.setProperty('--card-subtitle-en-weight', 'bold');
       }
     },
   },
@@ -76,8 +80,10 @@ export default {
   --link-color: #b3ecff;
   --link-wordcloud-color: #d8f728f4;
   --card-title-color: lemonchiffon;
-  --card-subtitle-color: #b3ecff;
+  --card-subtitle-color: #96ff99;
   --card-subtitle-weight: 'regular';
+  --card-subtitle-en-color: #a7e9ff;
+  --card-subtitle-en-weight: 'regular';
 }
 .navbar {
   display: flex;
@@ -128,5 +134,9 @@ a.wordcloud {
 .card_subtitle {
   color: var(--card-subtitle-color) !important;
   font-weight: var(--card-subtitle-weight) !important;
+}
+.card_subtitle_en {
+  color: var(--card-subtitle-en-color) !important;
+  font-weight: var(--card-subtitle-en-weight) !important;
 }
 </style>
