@@ -118,20 +118,20 @@ export default {
       }, 100);
     },
     getActivities() {
-      let url = "sample/all.json";
+      let url = `${this.$dataSource}/all.json`;
       if (this.search) {
-        url = `sample/name/${this.search}`;
+        url = `${this.$dataSource}/name/${this.search}`;
       } else if (this.location) {
-        url = `sample/location/${this.location.toLowerCase()}`;
+        url = `${this.$dataSource}/location/${this.location.toLowerCase()}`;
       } else if (this.quarter) {
-        url = `sample/quarter/${this.quarter.toLowerCase()}`;
+        url = `${this.$dataSource}/quarter/${this.quarter.toLowerCase()}`;
       }
       setTimeout(() => {
         this.callAPI(url);
       });
     },
     getBadgeActivities() {
-      let url = "sample/all.json";
+      let url = `${this.$dataSource}/all.json`;
       setTimeout(() => {
         switch (this.badge) {
           case 'Thrive':

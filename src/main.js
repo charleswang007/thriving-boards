@@ -20,6 +20,9 @@ const api = axios.create({
 //API call prototype variable
 Vue.prototype.$http = api;
 
+//Data Switch
+Vue.prototype.$dataSource = 'sample'
+
 //Font awesome Icon setup
 library.add(faMoon);
 library.add(faSun);
